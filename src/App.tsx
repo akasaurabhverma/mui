@@ -2,7 +2,9 @@ import { Box } from "@mui/material";
 import "./App.css";
 import { MuiButtons } from "./components/MuiButton";
 import { MuiButtonGroup } from "./components/MuiButtonGroup";
+import { MuiCheckbox } from "./components/MuiCheckbox";
 import { MuiRadio } from "./components/MuiRadio";
+import { MuiRating } from "./components/MuiRating";
 import { MuiSelect } from "./components/MuiSelect";
 import { MuiTextField } from "./components/MuiTextField";
 import { MuiToggleButtonGroup } from "./components/MuiToggleButtonGroup";
@@ -16,8 +18,10 @@ function App() {
       <MuiButtonGroup />
       <MuiToggleButtonGroup />
       <MuiTextField /> 
-      <MuiSelect />*/}
+      <MuiSelect />
       <MuiRadio />
+      <MuiCheckbox />*/}
+      <MuiRating />
     </Box>
   );
 }

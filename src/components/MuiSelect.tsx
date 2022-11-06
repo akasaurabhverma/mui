@@ -16,7 +16,7 @@ export const MuiSelect = () => {
   const [country, setCountry] = useState("");
   const [countries, setCountries] = useState<string[]>([]);
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setCountry(event.target.value as string);
+    setCountry(event.target.value);
   };
   const handleMultipleChange = (event: ChangeEvent<HTMLInputElement>): void => {
     const { value } = event.target;
