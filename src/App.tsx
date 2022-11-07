@@ -13,6 +13,7 @@ import { MuiTextField } from "./components/MuiTextField";
 import { MuiToggleButtonGroup } from "./components/MuiToggleButtonGroup";
 import { MuiTypography } from "./components/MuiTypography";
 import { MuiAccordion } from "./components/MuiAccordion";
+import { MuiImageList } from "./components/MuiImageList";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
       <MuiRating />
       <MuiAutocomplete />
       <MuiLayout />
-      <MuiCard />*/}
-      <MuiAccordion />
+      <MuiCard />
+      <MuiAccordion />*/}
+      <MuiImageList />
     </Box>
   );
 }
