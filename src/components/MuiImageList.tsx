@@ -3,10 +3,10 @@ import { ImageList, ImageListItem, Stack } from "@mui/material";
 export const MuiImageList = () => {
   return (
     <Stack spacing={4}>
-      <ImageList sx={{ width: 600, height: 450 }} cols={3} rowHeight={164}>
+      <ImageList sx={{ height: 450 }} cols={5} rowHeight={164}>
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img src={`${item.img}`} />
+          <ImageListItem key={item.img} sx={{ overflowY: "hidden" }}>
+            <img src={`${item.img}`} loading="lazy" />
           </ImageListItem>
         ))}
       </ImageList>
@@ -14,7 +14,7 @@ export const MuiImageList = () => {
   );
 };
 
-const itemData = [
+const imgData = [
   {
     img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
     title: "Breakfast",
@@ -77,4 +77,15 @@ const itemData = [
     title: "Bike",
     author: "@southside_customs",
   },
+];
+
+const itemData = [
+  ...imgData,
+  ...imgData,
+  ...imgData,
+  ...imgData,
+  ...imgData,
+  ...imgData,
+  ...imgData,
+  ...imgData,
 ];
